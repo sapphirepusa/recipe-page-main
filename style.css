@@ -1,0 +1,55 @@
+/* font for this website */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Young+Serif&display=swap');
+
+/* CSS reset */
+html {
+    -moz-text-size-adjust: none;
+    -webkit-text-size-adjust: none;
+    text-size-adjust: none;
+    
+}
+
+body {
+    min-height: 100vh;
+    line-height: 1.5;
+    background-color: #F3E5D8;
+    padding: 1rem;
+    margin-left: 35.5rem;
+    margin-right: 35.5rem;
+    margin-top: 6.7rem;
+}
+
+h1, h2, h3, h4, button {
+  line-height: 1.1;
+}
+
+h1, h2, h3, h4 {
+  text-wrap: balance;
+}
+
+img, picture {
+  max-width: 100%;
+  display: block;
+}
+
+h1, h2, h3, h4, p {
+  font-family: inherit;
+  font-size: inherit;
+}
+
+
+/* design */
+
+/* .main-container {
+    border-style: dotted;
+  
+} */
+
+.container-design {    
+    background-color: #FFFFFF;
+    min-height: 100svh;
+    flex-direction: column;
+    gap: 2rem;
+    border-radius: 26px;
+}
+
