@@ -14,9 +14,9 @@ body {
     line-height: 1.5;
     background-color: #F3E5D8;
     padding: 1rem;
-    margin-left: 35.5rem;
+    /* margin-left: 35.5rem;
     margin-right: 35.5rem;
-    margin-top: 6.7rem;
+    margin-top: 6.7rem; */
 }
 
 h1, h2, h3, h4, button {
@@ -27,7 +27,7 @@ h1, h2, h3, h4 {
   text-wrap: balance;
 }
 
-img, picture {
+img {
   max-width: 100%;
   display: block;
 }
@@ -45,11 +45,36 @@ h1, h2, h3, h4, p {
   
 } */
 
+/* to center the the object in this case the container */
 .container-design {    
     background-color: #FFFFFF;
     min-height: 100svh;
     flex-direction: column;
     gap: 2rem;
     border-radius: 26px;
+    max-width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 6.3rem;
 }
 
+.container-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+
+
+.img-style {
+  border-radius: 10px;
+  width: 40rem;
+  margin-top: 2rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+.text-style {
+
+}
