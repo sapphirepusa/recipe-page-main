@@ -19,23 +19,23 @@ body {
     margin-top: 6.7rem; */
 }
 
-h1, h2, h3, h4, button {
+/* h1, h2, h3, h4, button {
   line-height: 1.1;
 }
 
 h1, h2, h3, h4 {
   text-wrap: balance;
-}
+} */
 
 img {
   max-width: 100%;
   display: block;
 }
 
-h1, h2, h3, h4, p {
+/* h1, h2, h3, h4, p {
   font-family: inherit;
   font-size: inherit;
-}
+} */
 
 
 /* design */
@@ -75,6 +75,7 @@ h1, h2, h3, h4, p {
   margin-right: 2rem;
 }
 
-.text-style {
+.content-recipe {
+  background-color: bisque;
 
 }
