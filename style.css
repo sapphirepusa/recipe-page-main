@@ -2,12 +2,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Young+Serif&display=swap');
 
 /* CSS reset */
-html {
-    -moz-text-size-adjust: none;
-    -webkit-text-size-adjust: none;
-    text-size-adjust: none;
-    
-}
 
 body {
     min-height: 100vh;
@@ -19,30 +13,8 @@ body {
     margin-top: 6.7rem; */
 }
 
-/* h1, h2, h3, h4, button {
-  line-height: 1.1;
-}
-
-h1, h2, h3, h4 {
-  text-wrap: balance;
-} */
-
-img {
+/* img {
   max-width: 100%;
-  display: block;
-}
-
-/* h1, h2, h3, h4, p {
-  font-family: inherit;
-  font-size: inherit;
-} */
-
-
-/* design */
-
-/* .main-container {
-    border-style: dotted;
-  
 } */
 
 /* to center the the object in this case the container */
@@ -52,10 +24,11 @@ img {
     flex-direction: column;
     gap: 2rem;
     border-radius: 26px;
-    max-width: fit-content;
+    max-width: 46rem;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 6.3rem;
+    margin-top: 6.2rem;
+    
 }
 
 .container-content {
@@ -64,18 +37,50 @@ img {
   justify-content: center;
   align-items: center;
   gap: 40px;
+  margin-left: 2.5rem;
+  margin-right: 2.5rem;
+  
 }
 
 
 .img-style {
-  border-radius: 10px;
-  width: 40rem;
-  margin-top: 2rem;
-  margin-left: 2rem;
+  border-radius: 13px;
+  width: 90%;
+  margin-top: 2.5rem;
+  margin-left: 2.3rem;
   margin-right: 2rem;
 }
 
-.content-recipe {
-  background-color: bisque;
+.recipe-content {
+  /* background-color: bisque; */
 
+}
+
+/* different styles for different media types/devices */
+@media only screen and (max-width: 700px) {
+  .img-style {
+   margin: 0;
+   border-radius: 0;
+   width: 100%;
+  }
+
+  body{
+    margin: 0;
+    border-radius: 0;
+    padding: 0;
+    height: 0;
+    border-radius: 0;
+  }
+
+  .container-design {
+    margin: 0;
+    padding: 0;
+    border-radius: 0;
+  }
+
+  .container-content {
+    gap: 5px;
+  }
+
+  
 }
