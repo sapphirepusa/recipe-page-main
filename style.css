@@ -1,7 +1,7 @@
 /* font for this website */
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Young+Serif&display=swap');
 
-/* CSS reset */
+
 
 body {
     min-height: 100vh;
@@ -13,9 +13,39 @@ body {
     margin-top: 6.7rem; */
 }
 
-/* img {
-  max-width: 100%;
-} */
+h1, h2 {
+  font-family: "Young Serif", system-ui;
+}
+
+p, li, ol, ul, h3 {
+  font-family: "Outfit", system-ui;
+  font-weight: 240;
+}
+
+ol, ul{
+  padding-left: 23px;
+  color: hsl(30, 10%, 34%)
+}
+
+h1 {
+  font-weight: 400;
+  font-size: 2.5rem;
+  margin-bottom: 0;
+  color: hsl(24, 5%, 18%);
+}
+
+h2 {
+  color: hsl(14, 45%, 36%);
+  font-size: 1.8rem;
+}
+
+h3 {
+  font-weight: 600;
+  font-size: 1.2rem;
+  color: hsl(332, 51%, 32%);
+  margin-bottom: 0;
+}
+
 
 /* to center the the object in this case the container */
 .container-design {    
@@ -45,15 +75,51 @@ body {
 
 .img-style {
   border-radius: 13px;
-  width: 90%;
+  width: 89%;
   margin-top: 2.5rem;
-  margin-left: 2.3rem;
+  margin-left: 2.5rem;
   margin-right: 2rem;
 }
 
-.recipe-content {
-  /* background-color: bisque; */
+/* .recipe-content {
+  background-color: bisque;
 
+} */
+
+.prep-card {
+  background-color: hsl(330, 100%, 98%);
+  padding-top: 0.3rem;
+  padding-left: 1.8rem;
+  padding-right: 2rem;
+  padding-bottom: 0.8rem;
+  margin-top: 2rem;
+  border-radius: 10px;
+
+}
+
+.prep-ul {
+  margin: 0;
+}
+
+.prep-li {
+   margin-bottom: 0.5rem;
+   margin-top: .5rem;
+   padding-left: 1rem;
+   font-weight: 300;
+}
+
+.bold-text {
+  font-weight: 700;
+}
+
+.ing-li {
+  padding-left: 1rem;
+  margin-bottom: 0.7rem;
+  gap: 2rem;
+}
+
+.bot-line {
+  border-bottom: 1px solid hsl(30, 54%, 90%);
 }
 
 /* different styles for different media types/devices */
