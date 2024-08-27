@@ -113,15 +113,6 @@ h3 {
    font-weight: 290;
 }
 
-.bold-text-preparation {
-  font-weight: 700;
-}
-
-.bold-text-instruction {
-  font-weight: 700;
-  color: hsl(30, 10%, 34%);
-}
-
 .ing-li {
   padding-left: 1rem;
   margin-bottom: 0.7rem;
@@ -143,11 +134,12 @@ h3 {
 
 .instruction-ol {
   padding-left: 0.5rem;
+ 
 }
 
 .instruction-li {
-  text-align: justify;
-  text-wrap: wrap;
+  list-style-position: outside;
+
 }
 
 
