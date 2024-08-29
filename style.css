@@ -2,7 +2,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Young+Serif&display=swap');
 
 
-
 body {
     min-height: 100vh;
     line-height: 1.5;
@@ -29,7 +28,6 @@ ol, ul{
 
 ol {
   list-style: none;
-  counter-reset: li;
 }
 
 h1 {
@@ -60,10 +58,7 @@ h3 {
     gap: 2rem;
     border-radius: 26px;
     max-width: 46rem;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 6.2rem;
-    
+    margin: 6.2rem auto 5rem auto;
 }
 
 .container-content {
@@ -77,8 +72,7 @@ h3 {
   
 }
 
-
-.img-style {
+.img-header {
   border-radius: 13px;
   width: 89%;
   margin-top: 2.5rem;
@@ -86,12 +80,7 @@ h3 {
   margin-right: 2rem;
 }
 
-/* .recipe-content {
-  background-color: bisque;
-
-} */
-
-.prep-card {
+.preparation-section {
   background-color: hsl(330, 100%, 98%);
   padding-top: 0.3rem;
   padding-left: 1.8rem;
@@ -99,32 +88,116 @@ h3 {
   padding-bottom: 0.8rem;
   margin-top: 2rem;
   border-radius: 10px;
-
 }
 
-.prep-ul {
+.preparation-ul {
   margin: 0;
 }
 
-.prep-li {
+.preparation-li {
    margin-bottom: 0.5rem;
    margin-top: .5rem;
    padding-left: 1rem;
    font-weight: 290;
 }
 
-.ing-li {
+.ingredients-li {
   padding-left: 1rem;
   margin-bottom: 0.7rem;
   gap: 2rem;
   font-weight: 290;
 }
 
-.bot-line {
-  border-bottom: 1px solid hsl(30, 54%, 90%);
+.ingredients-section, .instruction {
+  border-bottom: 1px solid hsl(30, 18%, 87%);
+  padding-bottom: 1rem;
 }
 
-.instruction-li ::before {
+.instruction-ol {
+  padding-left: 1.0rem;
+  margin: 0.5rem 0 0 0.3rem;
+}
+
+.instruction-h4 {
+  padding-right: 1.5rem; 
+  color: hsl(14, 45%, 36%);
+}
+
+/* .instruction-li {
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: baseline;
+  margin: 0;
+  padding: 0
+} */
+
+.instruction-p {
+  margin: 0;
+  text-wrap: wrap;
+  justify-items:start ;
+}
+
+.instruction-h2 {
+  margin-bottom: 0;
+}
+
+.instruction div {
+  margin: -0.5rem;
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: baseline;
+}
+
+#instruction-2-margin {
+  margin-bottom: -1rem;
+}
+
+.row-1::after, .row-2::after, .row-3::after, .row-4::after{
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.row-1, .row-2, .row-3{
+  border-bottom: 1px solid hsl(30, 18%, 87%);
+  padding: 0.8rem 0 0.8rem 0;
+}
+
+.row-4 {
+  padding: 0.8rem 0 0.8rem 0;
+}
+
+.column {
+  float: left;
+  width: 43%;
+  align-items: end;
+  font-family: "Outfit", system-ui;
+  font-weight: 300;
+  color: hsl(30, 10%, 34%);
+  justify-items: center;
+  margin-left: 2rem;
+}
+
+.nutrition {
+  padding-bottom: 1rem;
+}
+
+#column-text {
+  font-family: "Outfit", system-ui;
+  font-weight: 700;
+  color: hsl(14, 45%, 36%);
+}
+
+
+/* .instruction-div-row {
+  padding: 0;
+  border-style: dashed;
+} */
+
+/* increment order list */
+/* .instruction-li ::before {
   counter-increment: li;
   content: counter(li) ".";
   color: hsl(14, 45%, 36%);
@@ -140,16 +213,14 @@ h3 {
 .instruction-li {
   list-style-position: outside;
 
-}
-
-
+} */
 
 /* different styles for different media types/devices */
-@media only screen and (max-width: 700px) {
-  .img-style {
-   margin: 0;
-   border-radius: 0;
-   width: 100%;
+@media only screen and (max-width: 790px) {
+  .img-header {
+    border-radius: 0;
+    width: 100%;
+    margin: 0;
   }
 
   body{
@@ -170,5 +241,12 @@ h3 {
     gap: 5px;
   }
 
+  .container-design p {
+    text-wrap: wrap;
+  }
+
+  #instruction-2-margin {
+    margin-bottom: 0;
+  }
   
 }
