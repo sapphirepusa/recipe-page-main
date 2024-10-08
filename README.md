@@ -2,7 +2,7 @@
 
 ## Welcome! 👋
 
-Thanks for checking out my second mini project! 
+Thanks for checking out my mini project! 
 This is a solution to the [Recipe page challenge](https://www.frontendmentor.io/challenges/recipe-page-KiTsR8QQKm) on Frontend Mentor. 
 Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
